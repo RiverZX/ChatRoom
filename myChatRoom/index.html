@@ -1,0 +1,31 @@
+<!DOCtype html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<title>z's chatroom</title>
+		<link rel="stylesheet" href="style/main.css" type="text/css">
+	</head>
+	<body>
+		<div class='content'>
+			<div class='title'>
+				<h3>CHATING ROOM</h3>
+			</div>
+			<div class='showMessage' id='show'>
+			
+			</div>
+			<div class='sentMessage'>
+				<textarea class='sendText' placeholder="ender to send" id="text">
+					
+				</textarea>
+				<input type="button" id="sendBtn" value="send"></input>
+			</div>
+		</div>
+		<div class='hidden' id='hidden'>
+			<p>Please input your nickname</p>
+			<input type="text" id="nickname" placeholder="your nickname"></input>
+			<input type="button" id="nicknameBtn"value="OK"></input>
+		</div>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src='js/chat.js' ></script>
+	</body>
+</html>
